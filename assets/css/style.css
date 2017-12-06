@@ -1,0 +1,8 @@
+.quiz {
+	display: flex;
+}
+
+.button {
+	flex: 2;
+
+}
