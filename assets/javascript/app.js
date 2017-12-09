@@ -248,7 +248,7 @@ function renderButtons(array){
 		} else if (array === answers7) {
 			a.text(array[i].seventhA);
 		} else if (array === answers8) {
-			a.text(array[i].answers8);
+			a.text(array[i].eigthA);
 		} else if (array === answers9) {
 			a.text(array[i].ninthA)
 		}
