@@ -175,7 +175,7 @@ timeCounter = function() {
 	if (time === 0) {
 		questionsLeft--;
 		time = 20;
-		answersResult.push(ramaY.name)
+		answersResult.push(ramaY.continent)
 	};
 	time--;
 
@@ -233,7 +233,26 @@ function renderButtons(array){
 		var a = $('<button>');
 		a.addClass('answer btn btn-primary');
 		a.attr('data-name', array[i].continent);
-		a.text(array[i].firstA);
+		if (array === answers1) {
+			a.text(array[i].firstA);
+		} else if (array === answers2) {
+			a.text(array[i].secondA);
+		} else if (array === answers3) {
+			a.text(array[i].thirdA);
+		} else if (array === answers4) {
+			a.text(array[i].fourthA);
+		} else if (array === answers5) {
+			a.text(array[i].fifthA);
+		} else if (array === answers6) {
+			a.text(array[i].sixthA);
+		} else if (array === answers7) {
+			a.text(array[i].seventhA);
+		} else if (array === answers8) {
+			a.text(array[i].answers8);
+		} else if (array === answers9) {
+			a.text(array[i].ninthA)
+		}
+
 		$('.quiz').append(a);
 
 	};
@@ -255,6 +274,7 @@ function result() {
 		$('.question').empty();
 		$('.quiz').empty();
 		$('body').html('<h1>Congratulations!</h1>')
+
 };
 
 // //After the timer, we will put the function for the multiple choice selector
