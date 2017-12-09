@@ -90,7 +90,7 @@ var oya = {
 	firstA: 'desert',
 	secondA: 'caring',
 	thirdA: 'What can I do to stop this?',
-	fourthA: 'A trip to a zoo or aquarium',
+	fourthA: 'A nature reserve',
 	fifthA: 'Fighting is abhorrent, I would use my words',
 	sixthA: 'Pacifism in the face of war',
 	seventhA: 'Animal Husbandry',
@@ -156,21 +156,21 @@ var questions = {
 }
 
 //Answer arrays
-var answers1 = [ramaY.firstA, teWa.firstA, ix.firstA, oya.firstA, oka.firstA, finn.firstA, sifi.firstA, thini.firstA, jade.firstA];
-var answers2 = [ramaY.secondA, teWa.secondA, ix.secondA, oya.secondA, oka.secondA, finn.secondA, sifi.secondA, thini.secondA, jade.secondA];
-var answers3 = [ramaY.thirdA, teWa.thirdA, ix.thirdA, oya.thirdA, oka.thirdA, finn.thirdA, sifi.thirdA, thini.thirdA, jade.thirdA];
-var answers4 = [ramaY.fourthA, teWa.fourthA, ix.fourthA, oya.fourthA, oka.fourthA, finn.fourthA, sifi.fourthA, thini.fourthA, jade.fourthA];
-var answers5 = [ramaY.fifthA, teWa.fifthA, ix.fifthA, oya.fifthA, oka.fifthA, finn.fifthA, sifi.fifthA, thini.fifthA, jade.fifthA];
-var answers6 = [ramaY.sixthA, teWa.sixthA, ix.sixthA, oya.sixthA, oka.sixthA, finn.sixthA, sifi.sixthA, thini.sixthA, jade.sixthA];
-var answers7 = [ramaY.seventhA, teWa.seventhA, ix.seventhA, oya.seventhA, oka.seventhA, finn.seventhA, sifi.seventhA, thini.seventhA, jade.seventhA];
-var answers8 = [ramaY.eigthA, teWa.eigthA, ix.eigthA, oya.eigthA, oka.eigthA, finn.eigthA, sifi.eigthA, thini.eigthA, jade.eigthA];
-var answers9 = [ramaY.ninthA, teWa.ninthA, ix.ninthA, oya.ninthA, oka.ninthA, finn.ninthA, sifi.ninthA, thini.ninthA, jade.ninthA];
-var answersResult = [];;
+var answers1 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers2 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers3 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers4 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers5 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers6 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers7 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers8 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers9 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answersResult = [];
 
 //This is where I want to put the game timer
 timeCounter = function() {
 	
-	if (questionsLeft === 0 || start === false) {return};
+	if (questionsLeft === -1|| start === false) {return};
 	//This will reset the timer
 	if (time === 0) {
 		questionsLeft--;
@@ -217,7 +217,8 @@ function runQuiz() {
 		renderButtons(answers9);
 	} else {
 		result();
-}};
+	}
+};
 
 
 $('#start').on('click', function() {
@@ -231,8 +232,8 @@ function renderButtons(array){
 	for (var i = 0; i < array.length; i++) {
 		var a = $('<button>');
 		a.addClass('answer btn btn-primary');
-		a.attr('data-name', array[i]);
-		a.text(array[i]);
+		a.attr('data-name', array[i].continent);
+		a.text(array[i].firstA);
 		$('.quiz').append(a);
 
 	};
@@ -250,11 +251,10 @@ function renderButtons(array){
 
 
 function result() {
-	if (questions === 0) {
+	console.log("result is being called");
 		$('.question').empty();
 		$('.quiz').empty();
 		$('body').html('<h1>Congratulations!</h1>')
-	};
 };
 
 // //After the timer, we will put the function for the multiple choice selector
