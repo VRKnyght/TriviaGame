@@ -18,14 +18,14 @@ var jade = {
 	name: "Jade",
 	bio: "Plucky navigator from Na'al Fisio. Na'al Fisio is a continent that developed technology around it's abundance of steam, and has a thriving land and air transportation industry. Jade loves attention, though he usually gets it when he does not want it. He always seems to find himself in the wrong place at the wrong time, but his luck and tiger hook swords seems to keep him afloat." ,
 	continent: 'steam',
-	firstA: 'forest',
-	secondA: 'easygoing',
+	firstA: 'Forest',
+	secondA: 'Easygoing',
 	thirdA: 'Better them than me.',
-	fourthA: 'Casino!!! I\'m always a big winner!',
-	fifthA: 'A classic exotic weapon, like tiger hook swords',
+	fourthA: 'Casino!!! <br>I\'m always a big winner!',
+	fifthA: 'A classic exotic weapon<br>like tiger hook swords',
 	sixthA: 'Fuzzy Self Image',
 	seventhA: 'Geothermal Engineering',
-	eigthA: 'Afternoon, it is a nice time to relax',
+	eigthA: 'Afternoon<br>It is a nice time <br>to relax',
 	ninthA: 'Being Successful',
 };
 var sifi = {
@@ -33,14 +33,14 @@ var sifi = {
 	name: "Sifi",
 	bio: 'Storvik is a hardy place full of biodiesel powered engines and generators. This mechanic from Storvik knows how things work, but she has an issue seeing the bigger picture. Will war force her to examine things beyond her scope? Or will she take up her chainsawsword Fenrir, and face her Wyrd headon?',
 	continent: 'diesel',
-	firstA: 'mountains',
-	secondA: 'bold',
+	firstA: 'Mountains',
+	secondA: 'Bold',
 	thirdA: 'I must stop this!',
 	fourthA: 'Road Trip!',
-	fifthA: 'A weapon of my own design, preferably a chainsaw sword.',
+	fifthA: 'A weapon of my own design<br> like a chainsaw sword.',
 	sixthA: 'Seeing the grand design',
 	seventhA: 'Mechanical Engineering',
-	eigthA: 'Morning, it is when I am at my most productive',
+	eigthA: 'Morning<br>It is when I am at my <br>most productive',
 	ninthA: 'Moving Forward',
 };
 var thini = {
@@ -49,13 +49,13 @@ var thini = {
 	bio: 'Agcoau, the technological powerhouse continent, where technology has infiltrated every aspect of life. Agcoau is a brutal place for those who are not successful. Those that do not succeed are crushed under the opressing weight of the megacorporations live as dregs of society. This little spitfire is a star member of a group employed by the corporations to sabotage the other corporations to get a competitive edge on eachother. Any task that can help her infiltrate the corporations to aid those that the corporations have tread upon is a task she is happy to take.',
 	continent: 'cyber',
 	firstA: 'Megatropolis',
-	secondA: 'driven',
+	secondA: 'Driven',
 	thirdA: 'Maybe they deserve it.',
 	fourthA: 'The Moon',
-	fifthA: 'Automatic pistols and a techoblade',
+	fifthA: 'Automatic pistols<br>and a techoblade',
 	sixthA: 'Finding the good in people',
 	seventhA: 'Information Technologies',
-	eigthA: 'Twilight, the time when shifts switch.',
+	eigthA: 'Twilight <br>The time when <br>shifts switch.',
 	ninthA: 'Fixing Wrongs',
 };
 var oka = {
@@ -63,8 +63,8 @@ var oka = {
 	name: "Oka",
 	bio: 'Oka is from Nishon, the continent where people are so heavily attuned to magic, that they can summon elemental constructs. These constructs have limited communication abilities and are used to power their technology. Oka wascreated by magic, and is on a quest to discover who they truly are.',
 	continent: 'aeon',
-	firstA: 'town',
-	secondA: 'mild-mannered',
+	firstA: 'Town',
+	secondA: 'Mild-mannered',
 	thirdA: 'I should not get involved.',
 	fourthA: 'My work comes first...',
 	fifthA: 'My hands are all I need',
@@ -78,14 +78,14 @@ var finn = {
 	name: "Finn",
 	bio: "The Ethreltian continent's attunement to magic is rivaled only by the Nishon and Hashon continents. Finn is a teacher from Ethreltia and is eager to learn everything he can. Will his thirst for knowledge push him past his limits? Or will his eagerness crush him underfoot?",
 	continent: 'aether',
-	firstA: 'tundra',
-	secondA: 'educated',
+	firstA: 'Tundra',
+	secondA: 'Educated',
 	thirdA: 'I should stop this.',
 	fourthA: 'Spending all day at a library.',
-	fifthA: 'I prefer historical classics, like a spear and shield.',
+	fifthA: 'I prefer historical classics<br>like a spear and shield.',
 	sixthA: 'Apathy',
 	seventhA: 'Quantumn Physics',
-	eigthA: 'Sunrise! Each morning brings a new discovery!',
+	eigthA: 'Sunrise! <br>Each morning brings <br>a new discovery!',
 	ninthA: 'Learning Everything',
 };
 var oya = {
@@ -93,11 +93,11 @@ var oya = {
 	name: "Oya",
 	bio: 'Hashon is a continent where people can make a psychic, empathic link with any animal. Choosing to take a route closer in tune with nature, the Hashon people tend to take on the features of one they bond with. A Hashon doctor who made a vow to heal any living being, Oya is steadfast in her belief that killing is wrong, even when pushed to the point of no return',
 	continent: 'zombie',
-	firstA: 'desert',
-	secondA: 'caring',
+	firstA: 'Desert',
+	secondA: 'Caring',
 	thirdA: 'What can I do to stop this?',
 	fourthA: 'A nature reserve',
-	fifthA: 'Fighting is abhorrent, I would use my words',
+	fifthA: 'Fighting is abhorrent<br>I would use my words',
 	sixthA: 'Pacifism in the face of war',
 	seventhA: 'Animal Husbandry',
 	eigthA: 'Meal Time',
@@ -108,14 +108,14 @@ var ix = {
 	name: "Heiress Ix of Consequat",
 	bio: 'Meishon looks more unique in flora and fauna than any other continent. This is due to their focus on magically evolving anything in sight. Princess of her tribe from the vast continent of Meishon, Ix is no stranger to war, but prefers to watch animals evolve.',
 	continent: 'bio',
-	firstA: 'plains',
-	secondA: 'elite',
+	firstA: 'Plains',
+	secondA: 'Elite',
 	thirdA: 'Where are the authorities?',
-	fourthA: 'I like it right where I am right now!',
+	fourthA: 'I like it right where I am <br>right now!',
 	fifthA: 'Pokemon',
 	sixthA: 'Empathy',
 	seventhA: 'Genetic Engineering',
-	eigthA: 'Sundown, that is when the partys start',
+	eigthA: 'Sundown<br>that is when the <br>partys start',
 	ninthA: 'Enjoying Life',
 };
 var teWa = {
@@ -123,14 +123,14 @@ var teWa = {
 	name: "Te Wa",
 	bio: 'Former Sea King of the island hopping people. He lost his honor by being the only survivor from a disasterous shipwreck',
 	continent: 'traders',
-	firstA: 'boathouse',
-	secondA: 'adventurous',
+	firstA: 'Boathouse',
+	secondA: 'Adventurous',
 	thirdA: 'Should I do something about this?',
-	fourthA: 'A nice, relaxing time at the beach.',
-	fifthA: 'All I need is a stick and something to hit, watch it break.',
-	sixthA: 'Bearing the burden of everyone',
+	fourthA: 'A nice, relaxing <br>time at the beach.',
+	fifthA: 'All I need is a stick,<br>something to hit,<br> and watch it break.',
+	sixthA: 'Bearing the burden <br>of everyone',
 	seventhA: 'Navigation',
-	eigthA: 'Midnight, best time to see the stars',
+	eigthA: 'Midnight<br>best time to <br>see the stars',
 	ninthA: 'Reclaiming Glory',
 };
 
@@ -141,13 +141,13 @@ var ramaY = {
 	bio: "Niivan is a floating continent hidden from the rest of the world by a giant windstorm. These people understand and attune themselves to crystals. Born and raised to be an arbiter of his people from the floating continent of Niivan, Rama'y is an inquisitive soul that wants to know more about the world",
 	continent: 'crystal',
 	firstA: 'I do not know',
-	secondA: 'curious',
+	secondA: 'Curious',
 	thirdA: 'Why would they do that?',
 	fourthA: 'A trip around the world.',
-	fifthA: 'lazer focused through a crystal',
+	fifthA: 'Lazer focused<br>through a crystal',
 	sixthA: 'Naievete',
 	seventhA: 'Piezoelectricity',
-	eigthA: 'Noon, one\'s shadow is at its smallest',
+	eigthA: 'Noon<br>One\'s shadow <br>is at its smallest',
 	ninthA: 'Seeking Justice',
 };
 
@@ -169,7 +169,7 @@ var answers1 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
 var answers2 = [oka, finn, teWa, ramaY, ix, oya, thini, jade, sifi];
 var answers3 = [oya, ix, jade, oka, thini, teWa, finn, sifi, ramaY];
 var answers4 = [ix, oya, oka, teWa, finn, sifi, jade, ramaY, thini];
-var answers5 = [teWa, oka, ramaY, jade, sifi, thini, ix, oka, finn];
+var answers5 = [teWa, oya, ramaY, jade, sifi, thini, ix, oka, finn];
 var answers6 = [sifi, jade, finn, thini, oka, ix, ramaY, oya, teWa];
 var answers7 = [jade, ramaY, oya, sifi, thini, oka, teWa, finn, ix];
 var answers8 = [finn, thini, sifi, ix, ramaY, jade, oka, teWa, oya];
@@ -183,7 +183,7 @@ timeCounter = function() {
 	//This will reset the timer
 	if (time === 0) {
 		questionsLeft--;
-		time = 20;
+		time = 60;
 		answersResult.push(ramaY.continent)
 	};
 	time--;
@@ -242,23 +242,23 @@ function renderButtons(array){
 		a.addClass('answer btn btn-primary');
 		a.attr('data-name', array[i].continent);
 		if (array === answers1) {
-			a.text(array[i].firstA);
+			a.html(array[i].firstA);
 		} else if (array === answers2) {
-			a.text(array[i].secondA);
+			a.html(array[i].secondA);
 		} else if (array === answers3) {
-			a.text(array[i].thirdA);
+			a.html(array[i].thirdA);
 		} else if (array === answers4) {
-			a.text(array[i].fourthA);
+			a.html(array[i].fourthA);
 		} else if (array === answers5) {
-			a.text(array[i].fifthA);
+			a.html(array[i].fifthA);
 		} else if (array === answers6) {
-			a.text(array[i].sixthA);
+			a.html(array[i].sixthA);
 		} else if (array === answers7) {
-			a.text(array[i].seventhA);
+			a.html(array[i].seventhA);
 		} else if (array === answers8) {
-			a.text(array[i].eigthA);
+			a.html(array[i].eigthA);
 		} else if (array === answers9) {
-			a.text(array[i].ninthA)
+			a.html(array[i].ninthA)
 		}
 
 		$('.quiz').append(a);

@@ -24,4 +24,6 @@
 	max-width: 30vw;
 	min-height: 28vh;
 	margin: 5px;
+	font-size: 30px;
+	overflow: wrap;
 }
