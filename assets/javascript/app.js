@@ -16,6 +16,7 @@ var time = 21;
 var jade = {
 	value: 0,
 	name: "Jade",
+	bio: "Plucky navigator from Na'al Fisio. Na'al Fisio is a continent that developed technology around it's abundance of steam, and has a thriving land and air transportation industry. Jade loves attention, though he usually gets it when he does not want it. He always seems to find himself in the wrong place at the wrong time, but his luck and tiger hook swords seems to keep him afloat." ,
 	continent: 'steam',
 	firstA: 'forest',
 	secondA: 'easygoing',
@@ -30,6 +31,7 @@ var jade = {
 var sifi = {
 	value: 0,
 	name: "Sifi",
+	bio: 'Storvik is a hardy place full of biodiesel powered engines and generators. This mechanic from Storvik knows how things work, but she has an issue seeing the bigger picture. Will war force her to examine things beyond her scope? Or will she take up her chainsawsword Fenrir, and face her Wyrd headon?',
 	continent: 'diesel',
 	firstA: 'mountains',
 	secondA: 'bold',
@@ -44,6 +46,7 @@ var sifi = {
 var thini = {
 	value: 0,
 	name: "Thini",
+	bio: 'Agcoau, the technological powerhouse continent, where technology has infiltrated every aspect of life. Agcoau is a brutal place for those who are not successful. Those that do not succeed are crushed under the opressing weight of the megacorporations live as dregs of society. This little spitfire is a star member of a group employed by the corporations to sabotage the other corporations to get a competitive edge on eachother. Any task that can help her infiltrate the corporations to aid those that the corporations have tread upon is a task she is happy to take.',
 	continent: 'cyber',
 	firstA: 'Megatropolis',
 	secondA: 'driven',
@@ -58,6 +61,7 @@ var thini = {
 var oka = {
 	value: 0,
 	name: "Oka",
+	bio: 'Oka is from Nishon, the continent where people are so heavily attuned to magic, that they can summon elemental constructs. These constructs have limited communication abilities and are used to power their technology. Oka wascreated by magic, and is on a quest to discover who they truly are.',
 	continent: 'aeon',
 	firstA: 'town',
 	secondA: 'mild-mannered',
@@ -72,7 +76,8 @@ var oka = {
 var finn = {
 	value: 0,
 	name: "Finn",
-	continent: 'ether',
+	bio: "The Ethreltian continent's attunement to magic is rivaled only by the Nishon and Hashon continents. Finn is a teacher from Ethreltia and is eager to learn everything he can. Will his thirst for knowledge push him past his limits? Or will his eagerness crush him underfoot?",
+	continent: 'aether',
 	firstA: 'tundra',
 	secondA: 'educated',
 	thirdA: 'I should stop this.',
@@ -86,6 +91,7 @@ var finn = {
 var oya = {
 	value: 0,
 	name: "Oya",
+	bio: 'Hashon is a continent where people can make a psychic, empathic link with any animal. Choosing to take a route closer in tune with nature, the Hashon people tend to take on the features of one they bond with. A Hashon doctor who made a vow to heal any living being, Oya is steadfast in her belief that killing is wrong, even when pushed to the point of no return',
 	continent: 'zombie',
 	firstA: 'desert',
 	secondA: 'caring',
@@ -100,6 +106,7 @@ var oya = {
 var ix = {
 	value: 0,
 	name: "Heiress Ix of Consequat",
+	bio: 'Meishon looks more unique in flora and fauna than any other continent. This is due to their focus on magically evolving anything in sight. Princess of her tribe from the vast continent of Meishon, Ix is no stranger to war, but prefers to watch animals evolve.',
 	continent: 'bio',
 	firstA: 'plains',
 	secondA: 'elite',
@@ -114,6 +121,7 @@ var ix = {
 var teWa = {
 	value: 0,
 	name: "Te Wa",
+	bio: 'Former Sea King of the island hopping people. He lost his honor by being the only survivor from a disasterous shipwreck',
 	continent: 'traders',
 	firstA: 'boathouse',
 	secondA: 'adventurous',
@@ -130,6 +138,7 @@ var teWa = {
 var ramaY = {
 	value: 0,
 	name: "Rama'Y",
+	bio: "Niivan is a floating continent hidden from the rest of the world by a giant windstorm. These people understand and attune themselves to crystals. Born and raised to be an arbiter of his people from the floating continent of Niivan, Rama'y is an inquisitive soul that wants to know more about the world",
 	continent: 'crystal',
 	firstA: 'I do not know',
 	secondA: 'curious',
@@ -180,8 +189,8 @@ timeCounter = function() {
 	time--;
 
 	console.log(time);
-	console.log(questionsLeft);
 	runQuiz();
+	console.log(answersResult);
 };
 
 
@@ -263,7 +272,6 @@ function renderButtons(array){
 		time = 20; 
 		questionsLeft--;
 		answersResult.push($(this).attr('data-name')); 
-		console.log(answersResult);
 	});
 };
 
@@ -274,6 +282,53 @@ function result() {
 		$('.question').empty();
 		$('.quiz').empty();
 		$('body').html('<h1>Congratulations!</h1>')
+	
+	function mode(arr){
+    return arr.sort((a,b) =>
+          arr.filter(v => v===a).length
+        - arr.filter(v => v===b).length
+    )
+
+
+}
+mode(answersResult);
+if (answersResult[8] === "crystal") {
+	$('body').html('<h1>' + ramaY.name);
+	$('body').append(ramaY.bio);
+
+} else if (answersResult[8] === "bio") {
+	$('body').html('<h1>' + ix.name);
+	$('body').append(ix.bio)
+
+} else if (answersResult[8] === "zombie") {
+	$('body').html('<h1>' + oya.name);
+	$('body').append(oya.bio)
+
+} else if (answersResult[8] === "steam") {
+	$('body').html('<h1>' + jade.name);
+	$('body').append(jade.bio)
+
+} else if (answersResult[8] === "diesel") {
+	$('body').html('<h1>' + sifi.name);
+	$('body').append(sifi.bio)
+
+} else if (answersResult[8] === "aether") {
+	$('body').html('<h1>' + finn.name);
+	$('body').append(finn.bio)
+
+} else if (answersResult[8] === "traders") {
+	$('body').html('<h1>' + teWa.name);
+	$('body').append(teWa.bio)
+
+} else if (answersResult[8] === "aeon") {
+	$('body').html('<h1>' + oka.name);
+	$('body').append(oka.bio)
+
+} else if (answersResult[8] === "cyber") {
+	$('body').html('<h1>' + thini.name);
+	$('body').append(thini.bio)
+
+}
 
 };
 
