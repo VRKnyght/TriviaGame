@@ -166,14 +166,14 @@ var questions = {
 
 //Answer arrays
 var answers1 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
-var answers2 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
-var answers3 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
-var answers4 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
-var answers5 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
-var answers6 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
-var answers7 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
-var answers8 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
-var answers9 = [ramaY, teWa, ix, oya, oka, finn, sifi, thini, jade];
+var answers2 = [oka, finn, teWa, ramaY, ix, oya, thini, jade, sifi];
+var answers3 = [oya, ix, jade, oka, thini, teWa, finn, sifi, ramaY];
+var answers4 = [ix, oya, oka, teWa, finn, sifi, jade, ramaY, thini];
+var answers5 = [teWa, oka, ramaY, jade, sifi, thini, ix, oka, finn];
+var answers6 = [sifi, jade, finn, thini, oka, ix, ramaY, oya, teWa];
+var answers7 = [jade, ramaY, oya, sifi, thini, oka, teWa, finn, ix];
+var answers8 = [finn, thini, sifi, ix, ramaY, jade, oka, teWa, oya];
+var answers9 = [thini, sifi, teWa, finn, jade, ramaY, oya, ix, oka];
 var answersResult = [];
 
 //This is where I want to put the game timer
@@ -188,9 +188,8 @@ timeCounter = function() {
 	};
 	time--;
 
-	console.log(time);
 	runQuiz();
-	console.log(answersResult);
+
 };
 
 
@@ -278,7 +277,7 @@ function renderButtons(array){
 
 
 function result() {
-	console.log("result is being called");
+	
 		$('.question').empty();
 		$('.quiz').empty();
 		$('body').html('<h1>Congratulations!</h1>')
